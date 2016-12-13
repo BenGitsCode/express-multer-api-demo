@@ -23,3 +23,10 @@ const params = {
   Key: file.title,
   Body: stream
 };
+
+s3.upload(params, function(error,data){
+if(error){
+  console.log(error);
+}
+console.log(data);
+});
