@@ -1,7 +1,12 @@
 'use strict';
 
+require('dotenv').load();
+// make environments available to this script
+
+// require file-system node module
 const fs = require('fs');
 
+// require aws sdk obviously
 const AWS = require('aws-sdk');
 // invokes constructor function to create new AWS module
 const s3 = new AWS.S3();
