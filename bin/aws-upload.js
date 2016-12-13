@@ -11,4 +11,5 @@ let file = {
  title: process.argv[3]
 };
 
+// logs file obviously
 console.log("file is ", file);
