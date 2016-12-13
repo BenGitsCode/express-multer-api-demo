@@ -13,3 +13,13 @@ let file = {
 
 // logs file obviously
 console.log("file is ", file);
+
+
+let stream =fs.createReadStram('file.path');
+let bucket = process.env.AWS_S3_BUCKET_NAME;
+
+const params = {
+  Bucket: bucket,
+  Key: file.title,
+  Body: stream
+};
